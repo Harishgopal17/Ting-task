@@ -12,7 +12,7 @@ export default function Standards() {
             Living up to earth-standard
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 max-sm:mx-3">
           <figure className="overflow-hidden group image-container relative">
             <StandardImg img={standardsectionimg1} title={"Custom Craft"}>
               <>

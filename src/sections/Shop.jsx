@@ -12,7 +12,7 @@ export default function Shop() {
             shop now
           </button>
         </div>
-        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4">
+        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4 max-sm:mx-3">
           {shopsectionimages.map((img) => (
             <figure key={img} className="overflow-hidden">
               <img
