@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dcd8cb;
+}
+
+@layer components {
+  .heading-with-line::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: -105%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  .description {
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    opacity: 0;
+  }
+
+  .image-container:hover .description {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .max-container {
+    @apply mx-auto my-0 max-w-[1200px] max-xl:max-w-5xl max-lg:max-w-[850px] max-md:max-w-[500px] max-sm:max-w-[400px];
+  }
+}
