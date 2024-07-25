@@ -37,6 +37,12 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+  @media screen and (max-width: 600px) {
+    .description {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 
 @layer utilities {
